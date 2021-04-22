@@ -12,6 +12,7 @@ struct ContentView: View {
     @State var lifeTotal2 = 20
     @State var lifeTotal3 = 20
     @State var lifeTotal4 = 20
+    @State var loser = "No losers so far!"
     var body: some View {
         VStack {
             Spacer()
@@ -21,12 +22,18 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         self.lifeTotal1 += -5
+                        if (self.lifeTotal1 <= 0) {
+                            loser = "Player 1 loses!"
+                        }
                     }) {
                         Text("-5")
                     }
                     .frame(width: 25.0, height: 25.0)
                     Button(action: {
                         self.lifeTotal1 += -1
+                        if (self.lifeTotal1 <= 0) {
+                            loser = "Player 1 loses!"
+                        }
                     }) {
                         Text("-")
                     }
@@ -52,12 +59,18 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         self.lifeTotal2 += -5
+                        if (self.lifeTotal2 <= 0) {
+                            loser = "Player 2 loses!"
+                        }
                     }) {
                         Text("-5")
                     }
                     .frame(width: 25.0, height: 25.0)
                     Button(action: {
                         self.lifeTotal2 += -1
+                        if (self.lifeTotal2 <= 0) {
+                            loser = "Player 2 loses!"
+                        }
                     }) {
                         Text("-")
                     }
@@ -83,12 +96,18 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         self.lifeTotal3 += -5
+                        if (self.lifeTotal3 <= 0) {
+                            loser = "Player 3 loses!"
+                        }
                     }) {
                         Text("-5")
                     }
                     .frame(width: 25.0, height: 25.0)
                     Button(action: {
                         self.lifeTotal3 += -1
+                        if (self.lifeTotal3 <= 0) {
+                            loser = "Player 3 loses!"
+                        }
                     }) {
                         Text("-")
                     }
@@ -114,12 +133,18 @@ struct ContentView: View {
                 HStack {
                     Button(action: {
                         self.lifeTotal4 += -5
+                        if (self.lifeTotal4 <= 0) {
+                            loser = "Player 4 loses!"
+                        }
                     }) {
                         Text("-5")
                     }
                     .frame(width: 25.0, height: 25.0)
                     Button(action: {
                         self.lifeTotal4 += -1
+                        if (self.lifeTotal4 <= 0) {
+                            loser = "Player 4 loses!"
+                        }
                     }) {
                         Text("-")
                     }
@@ -139,6 +164,8 @@ struct ContentView: View {
                 }
                 Spacer()
             }
+            Text(loser)
+            Spacer()
         }
     }
 }
