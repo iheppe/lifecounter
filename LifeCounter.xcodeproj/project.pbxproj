@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2232D9BA2638040A006A456E /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2232D9B92638040A006A456E /* PlayerData.swift */; };
 		22F8A20E2630F2B600399D4A /* LifeCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F8A20D2630F2B600399D4A /* LifeCounterApp.swift */; };
 		22F8A2102630F2B600399D4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F8A20F2630F2B600399D4A /* ContentView.swift */; };
 		22F8A2122630F2BB00399D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F8A2112630F2BB00399D4A /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2232D9B92638040A006A456E /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
 		22F8A20A2630F2B600399D4A /* LifeCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F8A20D2630F2B600399D4A /* LifeCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCounterApp.swift; sourceTree = "<group>"; };
 		22F8A20F2630F2B600399D4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				22F8A20D2630F2B600399D4A /* LifeCounterApp.swift */,
 				22F8A20F2630F2B600399D4A /* ContentView.swift */,
+				2232D9B92638040A006A456E /* PlayerData.swift */,
 				22F8A2112630F2BB00399D4A /* Assets.xcassets */,
 				22F8A2162630F2BB00399D4A /* Info.plist */,
 				22F8A2132630F2BB00399D4A /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2232D9BA2638040A006A456E /* PlayerData.swift in Sources */,
 				22F8A2102630F2B600399D4A /* ContentView.swift in Sources */,
 				22F8A20E2630F2B600399D4A /* LifeCounterApp.swift in Sources */,
 			);
