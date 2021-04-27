@@ -13,10 +13,17 @@ struct ContentView: View {
     @State var lifeTotal3 = 20
     @State var lifeTotal4 = 20
     @State var loser = "No losers so far!"
+    @ObservedObject var playerArr = PlayerArr()
+    
     var body: some View {
         VStack {
             Spacer()
-            PlayerData(player: Player(1))
+            List {
+                ForEach(playerArr.players, id: \.num) { currPlayer in
+                    PlayerData(player: currPlayer)
+                    Spacer()
+                }
+            }
             Spacer()
             Text(loser)
             Spacer()
@@ -93,6 +100,20 @@ class NumbersOnly: ObservableObject {
             }
         }
     }
+}
+
+class PlayerArr: ObservableObject {
+    @Published var players: [Player] = []
+    init() {
+        players = [
+            Player(1),
+            Player(2)
+        ]
+    }
+}
+
+private func AppendPlayer() {
+    
 }
 
 //Group {
